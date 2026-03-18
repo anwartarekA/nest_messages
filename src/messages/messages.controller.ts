@@ -11,7 +11,7 @@ export class MessagesController {
     return body;
   }
   @Get('/:id')
-  getMessage() {
-    return 'single message';
+  getMessage(@Param('id') id: string) {
+    return id;
   }
 }
