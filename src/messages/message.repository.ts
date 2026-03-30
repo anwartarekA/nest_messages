@@ -1,1 +1,4 @@
-export class MessageRepository {}
+export class MessageRepository {
+  // list all messages
+  findAll() {}
+}
