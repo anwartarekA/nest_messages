@@ -1,4 +1,6 @@
 import { readFile, writeFile } from 'fs/promises';
+import { Injectable } from '@nestjs/common';
+@Injectable()
 export class MessageRepository {
   // list all messages
   async findAll() {
