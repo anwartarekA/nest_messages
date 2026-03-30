@@ -6,7 +6,7 @@ export class MessageService {
   constructor(public repo: MessageRepository) {
     // create it's dependancy on it's own and don't do that
     // const repo = new MessageRepository();
-    // this.messageRepo = repo;
+    // this.messageRepo = repo
   }
   async findAll() {
     const messages = await this.repo.findAll();
