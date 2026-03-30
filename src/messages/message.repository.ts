@@ -12,4 +12,13 @@ export class MessageRepository {
     const messages = JSON.parse(contents);
     return messages[id];
   }
+  // create message
+  async create(content: string) {
+    const contents = await readFile('message.json', 'utf-8');
+    const messages = JSON.parse(contents);
+    // create random id
+    const id = Math.floor(Math.random() * 999);
+    messages[id] = { id, content };
+    await writeFile('message.json', JSON.stringify(messages));
+  }
 }
