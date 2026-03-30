@@ -9,10 +9,10 @@ export class MessageService {
   findAll() {
     return this.messageRepo.findAll();
   }
-  findOne(id) {
+  findOne(id: string) {
     return this.messageRepo.findOne(id);
   }
-  create(content) {
+  create(content: string) {
     return this.messageRepo.create(content);
   }
 }
