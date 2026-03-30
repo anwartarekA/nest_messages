@@ -1,1 +1,7 @@
-{"556":{"id":556,"content":"message one"}}
+{
+  "231": { "id": 231, "content": "message four" },
+  "248": { "id": 248, "content": "message two" },
+  "322": { "id": 322, "content": "message five" },
+  "556": { "id": 556, "content": "message one" },
+  "974": { "id": 974, "content": "message three" }
+}
